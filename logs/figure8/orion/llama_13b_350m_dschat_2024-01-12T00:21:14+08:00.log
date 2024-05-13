@@ -1,0 +1,1108 @@
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+*****************************************
+[2024-01-12 00:21:21,152] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,305] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,369] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,399] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,439] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,459] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,461] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-01-12 00:21:21,576] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+[2024-01-12 00:21:24,950] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:24,979] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:24,985] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:25,071] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:25,084] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:25,291] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:25,349] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-01-12 00:21:25,427] [INFO] [comm.py:637:init_distributed] cdb=None
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, aUsing /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.1754510402679443 seconds
+Time to load cpu_adam op: 1.0758802890777588 seconds
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.101536512374878 seconds
+Loading extension module cpu_adam...Loading extension module cpu_adam...
+
+Time to load cpu_adam op: 1.0169892311096191 seconds
+Time to load cpu_adam op: 1.114103078842163 seconds
+Loading extension module cpu_adam...
+Loading extension module cpu_adam...Loading extension module cpu_adam...Time to load cpu_adam op: 1.0674378871917725 seconds
+
+
+Time to load cpu_adam op: 1.0993716716766357 secondsTime to load cpu_adam op: 1.0815362930297852 seconds
+
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000010, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Loading extension module transformer_inference...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 1.5135676860809326 seconds
+Time to load transformer_inference op: 1.6293325424194336 seconds
+Loading extension module transformer_inference...Loading extension module transformer_inference...
+
+Loading extension module transformer_inference...Loading extension module transformer_inference...
+Time to load transformer_inference op: 1.5229642391204834 secondsLoading extension module transformer_inference...
+Time to load transformer_inference op: 1.673567771911621 secondsTime to load transformer_inference op: 1.4508814811706543 seconds
+
+
+
+Time to load transformer_inference op: 1.6704189777374268 secondsLoading extension module transformer_inference...Time to load transformer_inference op: 1.7092821598052979 seconds
+
+
+Time to load transformer_inference op: 1.669978141784668 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.338486909866333 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.306842565536499 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3180661201477051 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3676416873931885 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.31411242485046387 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.30310940742492676 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.37604308128356934 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.4040098190307617 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.29738545417785645 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.30623316764831543 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3099040985107422 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.32497215270996094 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.453289270401001 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.29559826850891113 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+
+Loading extension module transformer_inference...Loading extension module transformer_inference...
+
+Time to load transformer_inference op: 0.34722399711608887 seconds
+Time to load transformer_inference op: 0.4200098514556885 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.700911521911621 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.6384222507476807 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.8776497840881348 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.9056806564331055 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.970942735671997 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.8803212642669678 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.0337305068969727 seconds
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.854691743850708 seconds
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+Training time: 23.136761903762817Training time: 23.136972904205322
+
+Training time: 23.137004375457764
+Training time: 23.136932849884033
+Training time: 23.137112617492676
+Training time: 23.137067556381226Training time: 23.13711428642273
+
+Training time: 23.137006044387817
+Training time: 17.692824363708496
+Training time: 17.692919492721558Training time: 17.69298791885376
+Training time: 17.693077087402344
+
+Training time: 17.69293737411499Training time: 17.693005323410034
+
+Training time: 17.70012903213501
+Training time: 17.693105459213257
+Training time: 16.91897439956665Training time: 16.91908288002014
+
+Training time: 16.91906237602234
+Training time: 16.91911005973816
+Training time: 16.91896963119507
+Training time: 16.91895604133606
+Training time: 16.91908836364746
+Training time: 16.91907262802124
+Training time: 20.00467276573181Training time: 20.004582405090332
+
+Training time: 20.004615783691406
+Training time: 20.004744291305542
+Training time: 20.004764795303345
+Training time: 20.004584550857544
+Training time: 20.004728317260742Training time: 20.00469422340393
+
+Training time: 18.83005976676941
+Training time: 18.82999563217163
+Training time: 18.830105543136597
+Training time: 18.830053091049194Training time: 18.829951286315918
+
+Training time: 18.83012580871582
+Training time: 18.83003878593445
+Training time: 18.829976320266724
+py:957:print_user_config]   json = {
+    "train_batch_size": 256,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "offload_optimizer": {
+            "device": "cpu"
+        },
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "stage3_max_live_parameters": 3.000000e+07,
+        "stage3_prefetch_bucket_size": 3.000000e+07,
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true,
+        "loss_scale_window": 100
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false,
+    "hybrid_engine": {
+        "enabled": true,
+        "max_out_tokens": 512,
+        "inference_tp_size": 4,
+        "release_inference_cache": false,
+        "pin_parameters": true,
+        "tp_gather_partition_size": 4
+    },
+    "tensorboard": {
+        "enabled": false,
+        "output_path": "step3_tensorboard/ds_tensorboard_logs/",
+        "job_name": "step3_actor_tensorboard"
+    }
+}
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /public/home/qinghuatest/.cache/torch_extensions/py39_cu118/transformer_inference/build.ninja...
+Building extension module transformer_inference...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 1.6388423442840576 seconds
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 1.5079822540283203 secondsLoading extension module transformer_inference...
+Loading extension module transformer_inference...
+
+Time to load transformer_inference op: 1.6623036861419678 secondsTime to load transformer_inference op: 1.4922983646392822 seconds
+
+[2024-01-12 00:22:07,706] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed-Inference config: {'layer_id': 0, 'hidden_size': 5120, 'intermediate_size': 13824, 'heads': 40, 'num_hidden_layers': -1, 'dtype': torch.float16, 'pre_layer_norm': True, 'norm_type': <NormType.RMSNorm: 3>, 'local_rank': -1, 'stochastic_mode': False, 'epsilon': 1e-05, 'mp_size': 4, 'scale_attention': True, 'triangular_masking': True, 'local_attention': False, 'window_size': 1, 'rotary_dim': 128, 'rotate_half': True, 'rotate_every_two': False, 'return_tuple': True, 'mlp_after_attn': True, 'mlp_act_func_type': <ActivationFuncType.GATED_SILU: 4>, 'specialized_mode': False, 'training_mp_size': 1, 'bigscience_bloom': False, 'max_out_tokens': 512, 'min_out_tokens': 512, 'scale_attn_by_inverse_layer_idx': False, 'enable_qkv_quantization': False, 'use_mup': False, 'return_single_tuple': False, 'set_empty_params': True, 'transposed_mode': True, 'use_triton': False, 'triton_autotune': False, 'num_kv': -1}
+Loading extension module transformer_inference...Loading extension module transformer_inference...
+
+Loading extension module transformer_inference...Loading extension module transformer_inference...Time to load transformer_inference op: 1.5447793006896973 seconds
+Time to load transformer_inference op: 1.6940720081329346 seconds
+
+Time to load transformer_inference op: 1.6339356899261475 seconds
+Time to load transformer_inference op: 1.713545560836792 seconds
+
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3538784980773926 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3197910785675049 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.30913805961608887 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3913445472717285 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.38644957542419434 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3206937313079834 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.3369114398956299 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.2991006374359131 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.30483460426330566 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.30246663093566895 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.34103965759277344 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.34107112884521484 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.32788968086242676 seconds
+******************[end] Initialized Actor Model [end] (duration: 38.14s)******************
+*************************[start] Initializing Ref Model [start] **************************
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.4208827018737793 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.4168815612792969 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.30508995056152344 seconds
+[2024-01-12 00:22:24,749] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 726, num_elems = 26.03B
+[2024-01-12 00:22:25,006] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa0, git-hash=18c8aa0, git-branch=fix_tp
+[2024-01-12 00:22:25,047] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-01-12 00:22:25,048] [INFO] [logging.py:96:log_dist] [Rank 0] Creating ZeRO Offload
+[2024-01-12 00:22:25,218] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-01-12 00:22:25,219] [INFO] [utils.py:804:see_memory_usage] MA 1.8 GB         Max_MA 2.49 GB         CA 2.93 GB         Max_CA 3 GB
+[2024-01-12 00:22:25,219] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 243.45 GB, percent = 12.1%
+Parameter Offload: Total persistent parameters: 414720 in 81 params
+[2024-01-12 00:22:25,474] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-01-12 00:22:25,475] [INFO] [utils.py:804:see_memory_usage] MA 1.19 GB         Max_MA 1.8 GB         CA 2.93 GB         Max_CA 3 GB
+[2024-01-12 00:22:25,475] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 243.76 GB, percent = 12.1%
+[2024-01-12 00:22:25,476] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-01-12 00:22:25,476] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-01-12 00:22:25,476] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x2ab9061af4f0>
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... None
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-01-12 00:22:25,477] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   train_batch_size ............. 256
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   world_size ................... 16
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-01-12 00:22:25,478] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-01-12 00:22:25,479] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 256,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false
+}
+*******************[end] Initialized Ref Model [end] (duration: 15.43s)*******************
+************************[start] Initializing Critic Model [start] ************************
+[2024-01-12 00:22:25,916] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 872, num_elems = 26.34B
+>Creating model from_config took 0.48362112045288086 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.7740647792816162 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.8116636276245117 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.8212180137634277 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.8122148513793945 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.9460952281951904 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.898921012878418 seconds
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 2.0071866512298584 seconds
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Using /public/home/qinghuatest/.cache/torch_extensions/py39_cu118 as PyTorch extensions root...
+No modifications detected for re-loaded extension module cpu_adam, skipping build step...
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 1.9492745399475098 seconds
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+[2024-01-12 00:22:29,256] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa0, git-hash=18c8aa0, git-branch=fix_tp
+[2024-01-12 00:22:29,262] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-01-12 00:22:29,263] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-01-12 00:22:29,263] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-01-12 00:22:29,265] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = DeepSpeedCPUAdam
+[2024-01-12 00:22:29,265] [INFO] [utils.py:54:is_zero_supported_optimizer] Checking ZeRO support for optimizer=DeepSpeedCPUAdam type=<class 'deepspeed.ops.adam.cpu_adam.DeepSpeedCPUAdam'>
+[2024-01-12 00:22:29,265] [INFO] [logging.py:96:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer, MiCS is enabled False, Hierarchical params gather False
+[2024-01-12 00:22:29,266] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.float16 ZeRO stage 3 optimizer
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+Adam Optimizer #1 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.950000), weight_decay=0.000000, adam_w=1
+[2024-01-12 00:22:29,454] [INFO] [utils.py:803:see_memory_usage] Stage 3 initialize beginning
+[2024-01-12 00:22:29,455] [INFO] [utils.py:804:see_memory_usage] MA 1.26 GB         Max_MA 1.33 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:29,455] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 251.9 GB, percent = 12.5%
+[2024-01-12 00:22:29,456] [INFO] [stage3.py:126:__init__] Reduce bucket size 500,000,000
+[2024-01-12 00:22:29,456] [INFO] [stage3.py:127:__init__] Prefetch bucket size 30000000
+[2024-01-12 00:22:29,617] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-01-12 00:22:29,618] [INFO] [utils.py:804:see_memory_usage] MA 1.26 GB         Max_MA 1.26 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:29,618] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 251.9 GB, percent = 12.5%
+Parameter Offload: Total persistent parameters: 17408 in 34 params
+[2024-01-12 00:22:29,785] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-01-12 00:22:29,786] [INFO] [utils.py:804:see_memory_usage] MA 1.24 GB         Max_MA 1.27 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:29,786] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 251.9 GB, percent = 12.5%
+[2024-01-12 00:22:29,945] [INFO] [utils.py:803:see_memory_usage] Before creating fp16 partitions
+[2024-01-12 00:22:29,946] [INFO] [utils.py:804:see_memory_usage] MA 1.24 GB         Max_MA 1.24 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:29,946] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 251.9 GB, percent = 12.5%
+[2024-01-12 00:22:30,160] [INFO] [utils.py:803:see_memory_usage] After creating fp16 partitions: 2
+[2024-01-12 00:22:30,160] [INFO] [utils.py:804:see_memory_usage] MA 1.2 GB         Max_MA 1.24 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:30,161] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 252.91 GB, percent = 12.5%
+[2024-01-12 00:22:30,319] [INFO] [utils.py:803:see_memory_usage] Before creating fp32 partitions
+[2024-01-12 00:22:30,319] [INFO] [utils.py:804:see_memory_usage] MA 1.2 GB         Max_MA 1.2 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:30,320] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 252.91 GB, percent = 12.5%
+[2024-01-12 00:22:30,516] [INFO] [utils.py:803:see_memory_usage] After creating fp32 partitions
+[2024-01-12 00:22:30,517] [INFO] [utils.py:804:see_memory_usage] MA 1.2 GB         Max_MA 1.2 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:30,517] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 252.98 GB, percent = 12.6%
+[2024-01-12 00:22:30,715] [INFO] [utils.py:803:see_memory_usage] Before initializing optimizer states
+[2024-01-12 00:22:30,716] [INFO] [utils.py:804:see_memory_usage] MA 1.2 GB         Max_MA 1.2 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:30,716] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 254.47 GB, percent = 12.6%
+[2024-01-12 00:22:30,983] [INFO] [utils.py:803:see_memory_usage] After initializing optimizer states
+[2024-01-12 00:22:30,984] [INFO] [utils.py:804:see_memory_usage] MA 1.2 GB         Max_MA 1.2 GB         CA 3.01 GB         Max_CA 3 GB
+[2024-01-12 00:22:30,984] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 254.68 GB, percent = 12.6%
+[2024-01-12 00:22:30,984] [INFO] [stage3.py:459:_setup_for_real_optimizer] optimizer state initialized
+[2024-01-12 00:22:31,295] [INFO] [utils.py:803:see_memory_usage] After initializing ZeRO optimizer
+[2024-01-12 00:22:31,296] [INFO] [utils.py:804:see_memory_usage] MA 2.13 GB         Max_MA 2.19 GB         CA 3.95 GB         Max_CA 4 GB
+[2024-01-12 00:22:31,296] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 254.96 GB, percent = 12.7%
+[2024-01-12 00:22:31,296] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedCPUAdam
+[2024-01-12 00:22:31,297] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-01-12 00:22:31,297] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <torch.optim.lr_scheduler.LambdaLR object at 0x2ab8c7f2e370>
+[2024-01-12 00:22:31,297] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0, 0.0], mom=[(0.9, 0.95), (0.9, 0.95)]
+[2024-01-12 00:22:31,297] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-01-12 00:22:31,297] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-01-12 00:22:31,297] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-01-12 00:22:31,297] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-01-12 00:22:31,297] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x2ab9066f8520>
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... {'init_scale': 65536, 'scale_window': 100, 'delayed_shift': 2, 'consecutive_hysteresis': False, 'min_scale': 1}
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-01-12 00:22:31,298] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='step3_tensorboard/ds_tensorboard_logs/', job_name='step3_critic_tensorboard') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   train_batch_size ............. 256
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   world_size ................... 16
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='cpu', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=30000000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=30000000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-01-12 00:22:31,299] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-01-12 00:22:31,299] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 256,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "offload_optimizer": {
+            "device": "cpu"
+        },
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "stage3_max_live_parameters": 3.000000e+07,
+        "stage3_prefetch_bucket_size": 3.000000e+07,
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true,
+        "loss_scale_window": 100
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false,
+    "hybrid_engine": {
+        "enabled": false,
+        "max_out_tokens": 512,
+        "inference_tp_size": 1,
+        "release_inference_cache": false,
+        "pin_parameters": true,
+        "tp_gather_partition_size": 8
+    },
+    "tensorboard": {
+        "enabled": false,
+        "output_path": "step3_tensorboard/ds_tensorboard_logs/",
+        "job_name": "step3_critic_tensorboard"
+    }
+}
+******************[end] Initialized Critic Model [end] (duration: 5.82s)******************
+************************[start] Initializing Reward Model [start] ************************
+[2024-01-12 00:22:31,504] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 1018, num_elems = 26.64B
+>Creating model from_config took 0.25093674659729004 seconds
+[2024-01-12 00:22:31,551] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa0, git-hash=18c8aa0, git-branch=fix_tp
+[2024-01-12 00:22:31,556] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-01-12 00:22:31,556] [INFO] [logging.py:96:log_dist] [Rank 0] Creating ZeRO Offload
+[2024-01-12 00:22:31,728] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-01-12 00:22:31,729] [INFO] [utils.py:804:see_memory_usage] MA 2.21 GB         Max_MA 2.27 GB         CA 3.96 GB         Max_CA 4 GB
+[2024-01-12 00:22:31,729] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 254.98 GB, percent = 12.7%
+Parameter Offload: Total persistent parameters: 17408 in 34 params
+[2024-01-12 00:22:31,950] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-01-12 00:22:31,951] [INFO] [utils.py:804:see_memory_usage] MA 2.18 GB         Max_MA 2.21 GB         CA 3.96 GB         Max_CA 4 GB
+[2024-01-12 00:22:31,952] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 254.98 GB, percent = 12.7%
+[2024-01-12 00:22:31,952] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-01-12 00:22:31,952] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-01-12 00:22:31,952] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-01-12 00:22:31,952] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-01-12 00:22:31,952] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x2ab90691c5e0>
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... None
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-01-12 00:22:31,953] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   train_batch_size ............. 256
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   world_size ................... 16
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-01-12 00:22:31,954] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-01-12 00:22:31,954] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 256,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false
+}
+******************[end] Initialized Reward Model [end] (duration: 0.65s)******************
+***** Running training *****
+Beginning of Epoch 1/1, Total Generation Batches 120
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+------------------------------------------------------
+Free memory : 62.782471 (GigaBytes)
+Total memory: 79.199463 (GigaBytes)
+Requested memory: 19.375000 (GigaBytes)
+Setting maximum total tokens (input + output) to 512
+WorkSpace: 0x2ac2c4000000
+------------------------------------------------------
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/public/home/qinghuatest/miniconda3/envs/ljw-ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+Generation time: 28.610445976257324, exp gen time: 36.28853392601013
+[2024-01-12 00:23:30,556] [INFO] [loss_scaler.py:190:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 65536, but hysteresis is 2. Reducing hysteresis to 1
+[2024-01-12 00:23:31,382] [INFO] [loss_scaler.py:190:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 65536, but hysteresis is 2. Reducing hysteresis to 1
+Training time: 23.13650417327881
+Training time: 23.136712312698364Training time: 23.136666297912598
+Training time: 23.13671588897705Training time: 23.136678457260132
+Training time: 23.136829614639282Training time: 23.13682246208191
+Training time: 23.13662075996399
+
+
+
+Epoch: 0 | Step: 0 | PPO Epoch: 1 | Actor Loss: -0.3863407075405121 | Critic Loss: 1.020963191986084 | Unsupervised Loss: 0.0
+End-to-End => Latency: 59.43s, TFLOPs: 17.88, Samples/sec: 4.31, Time/seq 0.23s, Batch Size: 256, Total Seq. Length: 512
+Generation => Latency: 36.29s, Per-token Latency 141.75 ms, TFLOPs: 5.83, BW: 183.64 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 23.14s, TFLOPs: 36.79
+Actor Model Parameters => 13.016 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.25048828125
+-------------------------------------------------------------------------------------
+|E2E latency=59.26s |Gather latency=3.15s (5.31%) |Generate time=25.46s (42.97%) |Training time=29.81s (50.31%) |Others=3.98 (6.72%)|CurSamplesPerSec=4.32 |AvgSamplesPerSec=4.32
+Generation time: 28.209450721740723, exp gen time: 35.87629246711731
+[2024-01-12 00:24:23,640] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 65536, reducing to 32768
+[2024-01-12 00:24:24,958] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 65536, reducing to 32768
+Training time: 17.691458702087402
+Training time: 17.691365957260132Training time: 17.691416263580322
+Training time: 17.691577672958374Training time: 17.691478490829468Training time: 17.691444873809814
+Training time: 17.69157910346985
+Training time: 17.689355850219727
+
+
+
+Epoch: 0 | Step: 1 | PPO Epoch: 1 | Actor Loss: 0.09496933221817017 | Critic Loss: 1.787665843963623 | Unsupervised Loss: 0.0
+End-to-End => Latency: 53.57s, TFLOPs: 19.84, Samples/sec: 4.78, Time/seq 0.21s, Batch Size: 256, Total Seq. Length: 512
+Generation => Latency: 35.88s, Per-token Latency 140.14 ms, TFLOPs: 5.90, BW: 185.75 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 17.69s, TFLOPs: 48.11
+Actor Model Parameters => 13.016 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.22802734375
+-------------------------------------------------------------------------------------
+|E2E latency=53.58s |Gather latency=3.32s (6.20%) |Generate time=24.89s (46.45%) |Training time=23.49s (43.85%) |Others=5.19 (9.70%)|CurSamplesPerSec=4.78 |AvgSamplesPerSec=4.54
+Generation time: 27.640897512435913, exp gen time: 35.09191393852234
+[2024-01-12 00:25:16,385] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 32768, reducing to 16384
+[2024-01-12 00:25:16,974] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 32768, reducing to 16384
+Training time: 16.917031288146973Training time: 16.917160034179688Training time: 16.917006492614746Training time: 16.91698145866394
+Training time: 16.91714644432068Training time: 16.91683840751648Training time: 16.91704559326172
+
+
+
+
+
+Training time: 16.91468334197998
+Epoch: 0 | Step: 2 | PPO Epoch: 1 | Actor Loss: -0.13588082790374756 | Critic Loss: 1.0934131145477295 | Unsupervised Loss: 0.0
+End-to-End => Latency: 52.01s, TFLOPs: 20.43, Samples/sec: 4.92, Time/seq 0.20s, Batch Size: 256, Total Seq. Length: 512
+Generation => Latency: 35.09s, Per-token Latency 137.08 ms, TFLOPs: 6.03, BW: 189.91 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 16.91s, TFLOPs: 50.32
+Actor Model Parameters => 13.016 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.2257080078125
+-------------------------------------------------------------------------------------
+|E2E latency=52.02s |Gather latency=3.00s (5.78%) |Generate time=24.64s (47.36%) |Training time=22.74s (43.72%) |Others=4.64 (8.92%)|CurSamplesPerSec=4.92 |AvgSamplesPerSec=4.66
+Generation time: 27.52939748764038, exp gen time: 35.202595710754395
+Training time: 20.003417253494263Training time: 20.003456592559814Training time: 20.00338339805603Training time: 20.001168489456177Training time: 20.003232955932617Training time: 20.003371000289917Training time: 20.003429174423218Training time: 20.003552198410034
+
+
+
+
+
+
+
+Epoch: 0 | Step: 3 | PPO Epoch: 1 | Actor Loss: 0.008808549493551254 | Critic Loss: 0.9256579875946045 | Unsupervised Loss: 0.0
+End-to-End => Latency: 55.20s, TFLOPs: 19.25, Samples/sec: 4.64, Time/seq 0.22s, Batch Size: 256, Total Seq. Length: 512
+Generation => Latency: 35.20s, Per-token Latency 137.51 ms, TFLOPs: 6.01, BW: 189.31 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 20.00s, TFLOPs: 42.55
+Actor Model Parameters => 13.016 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.216552734375
+-------------------------------------------------------------------------------------
+|E2E latency=55.21s |Gather latency=3.05s (5.53%) |Generate time=24.48s (44.33%) |Training time=25.84s (46.80%) |Others=4.90 (8.87%)|CurSamplesPerSec=4.64 |AvgSamplesPerSec=4.65
+Generation time: 27.709578275680542, exp gen time: 35.02255415916443
+Training time: 18.829579830169678
+Training time: 18.827136039733887
+Training time: 18.829516172409058
+Training time: 18.829529762268066
+Training time: 18.829485416412354
+Training time: 18.829555988311768
+Training time: 18.82968258857727
+Training time: 18.82964253425598
+Epoch: 0 | Step: 4 | PPO Epoch: 1 | Actor Loss: -0.009006891399621964 | Critic Loss: 0.9811296463012695 | Unsupervised Loss: 0.0
+End-to-End => Latency: 53.85s, TFLOPs: 19.73, Samples/sec: 4.75, Time/seq 0.21s, Batch Size: 256, Total Seq. Length: 512
+Generation => Latency: 35.02s, Per-token Latency 136.81 ms, TFLOPs: 6.04, BW: 190.28 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 18.83s, TFLOPs: 45.21
+Actor Model Parameters => 13.016 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.202880859375
+-------------------------------------------------------------------------------------
+|E2E latency=53.86s |Gather latency=3.14s (5.83%) |Generate time=24.57s (45.61%) |Training time=24.49s (45.46%) |Others=4.81 (8.93%)|CurSamplesPerSec=4.75 |AvgSamplesPerSec=4.67

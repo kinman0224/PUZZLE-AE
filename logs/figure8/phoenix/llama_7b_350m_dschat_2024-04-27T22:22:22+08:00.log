@@ -1,0 +1,1147 @@
++ ACTOR_MODEL_PATH=/home/zhaijidong/kinman/hf-models/Llama-2-7b-sft-model-ocra-500k/
++ CRITIC_MODEL_PATH=/home/zhaijidong/kinman/puzzle/puzzle/example/config/Llama2-350m-hf/
++ ACTOR_ZERO_STAGE=3
++ CRITIC_ZERO_STAGE=3
++ OUTPUT=
++ '[' '' == '' ']'
++ OUTPUT=./output_step3_llama
++ '[' 3 == '' ']'
++ '[' 3 == '' ']'
++ mkdir -p ./output_step3_llama
++ Num_Padding_at_Beginning=1
++ Actor_Lr=9.65e-6
++ Critic_Lr=5e-6
++ DISTRIBUTED_ARGS='
+    --nproc_per_node 8     --nnodes 1     --node_rank 0     --master_addr localhost     --master_port 6000
+'
++ /home/zhaijidong/miniconda3/envs/ds/bin/torchrun --nproc_per_node 8 --nnodes 1 --node_rank 0 --master_addr localhost --master_port 6000 main.py --data_path /home/zhaijidong/kinman/data/Dahoas/rm-static/ --data_split 2,4,4 --actor_model_name_or_path /home/zhaijidong/kinman/hf-models/Llama-2-7b-sft-model-ocra-500k/ --critic_model_name_or_path /home/zhaijidong/kinman/puzzle/puzzle/example/config/Llama2-350m-hf/ --num_padding_at_beginning 1 --per_device_generation_batch_size 16 --per_device_training_batch_size 16 --generation_batches 1 --ppo_epochs 1 --max_answer_seq_len 256 --max_prompt_seq_len 256 --actor_learning_rate 9.65e-6 --critic_learning_rate 5e-6 --actor_weight_decay 0.1 --critic_weight_decay 0.1 --num_train_epochs 1 --lr_scheduler_type cosine --gradient_accumulation_steps 1 --actor_gradient_checkpointing --critic_gradient_checkpointing --offload_reference_model --actor_dropout 0.0 --num_warmup_steps 100 --deepspeed --seed 1234 --actor_zero_stage 3 --critic_zero_stage 3 --enable_hybrid_engine --output_dir ./output_step3_llama --data_output_path /home/zhaijidong/kinman/dstmp
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+*****************************************
+[2024-04-27 22:22:26,429] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,440] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,473] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,482] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,508] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,519] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,619] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-04-27 22:22:26,619] [INFO] [real_accelerator.py:158:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/deepspeed.py:23: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+[2024-04-27 22:22:32,355] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,938] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,940] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,943] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,946] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,949] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,949] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2024-04-27 22:22:32,951] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-04-27 22:22:32,953] [INFO] [comm.py:637:init_distributed] cdb=None
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Using pad_token, but it is not set yet.
+Setting model_config.attention_dropout to 0.0
+Setting model_config.attention_dropout to 0.0
+Setting model_config.attention_dropout to 0.0
+Setting model_config.attention_dropout to 0.0
+Setting model_config.attention_dropout to 0.0
+************************[start] Initializing Actor Model [start] *************************
+Setting model_config.attention_dropout to 0.0
+Setting model_config.attention_dropout to 0.0
+Setting model_config.attention_dropout to 0.0
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:43,205] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 291, num_elems = 6.74B
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:43,236] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 292, num_elems = 6.87B
+[2024-04-27 22:22:43,287] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 293, num_elems = 7.00B
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/zhaijidong/.cache/torch_extensions/py39_cu117/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.4812660217285156 seconds
+Loading extension module fused_adam...
+Loading extension module fused_adam...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.5061764717102051 seconds
+Time to load fused_adam op: 0.5059912204742432 seconds
+Time to load fused_adam op: 0.5060358047485352 seconds
+[2024-04-27 22:22:44,621] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa06, git-hash=18c8aa06, git-branch=fix_tp
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.5061466693878174 seconds
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.5059523582458496 seconds
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.506166934967041 seconds
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.5061836242675781 seconds
+[2024-04-27 22:22:44,768] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-04-27 22:22:44,772] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-04-27 22:22:44,772] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-04-27 22:22:44,800] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-04-27 22:22:44,801] [INFO] [utils.py:54:is_zero_supported_optimizer] Checking ZeRO support for optimizer=FusedAdam type=<class 'deepspeed.ops.adam.fused_adam.FusedAdam'>
+[2024-04-27 22:22:44,801] [INFO] [logging.py:96:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer, MiCS is enabled False, Hierarchical params gather False
+[2024-04-27 22:22:44,801] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.float16 ZeRO stage 3 optimizer
+[2024-04-27 22:22:44,963] [INFO] [utils.py:803:see_memory_usage] Stage 3 initialize beginning
+[2024-04-27 22:22:44,964] [INFO] [utils.py:804:see_memory_usage] MA 0.06 GB         Max_MA 0.86 GB         CA 1.29 GB         Max_CA 1 GB
+[2024-04-27 22:22:44,964] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 42.43 GB, percent = 4.2%
+[2024-04-27 22:22:44,966] [INFO] [stage3.py:126:__init__] Reduce bucket size 500,000,000
+[2024-04-27 22:22:44,966] [INFO] [stage3.py:127:__init__] Prefetch bucket size 30000000
+[2024-04-27 22:22:45,106] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-04-27 22:22:45,106] [INFO] [utils.py:804:see_memory_usage] MA 0.06 GB         Max_MA 0.06 GB         CA 1.29 GB         Max_CA 1 GB
+[2024-04-27 22:22:45,107] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 42.43 GB, percent = 4.2%
+Parameter Offload: Total persistent parameters: 266240 in 65 params
+[2024-04-27 22:22:45,259] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-04-27 22:22:45,260] [INFO] [utils.py:804:see_memory_usage] MA 0.06 GB         Max_MA 0.06 GB         CA 1.29 GB         Max_CA 1 GB
+[2024-04-27 22:22:45,260] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 42.43 GB, percent = 4.2%
+[2024-04-27 22:22:45,401] [INFO] [utils.py:803:see_memory_usage] Before creating fp16 partitions
+[2024-04-27 22:22:45,401] [INFO] [utils.py:804:see_memory_usage] MA 0.06 GB         Max_MA 0.06 GB         CA 1.29 GB         Max_CA 1 GB
+[2024-04-27 22:22:45,401] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 42.43 GB, percent = 4.2%
+[2024-04-27 22:22:47,373] [INFO] [utils.py:803:see_memory_usage] After creating fp16 partitions: 2
+[2024-04-27 22:22:47,374] [INFO] [utils.py:804:see_memory_usage] MA 0.06 GB         Max_MA 0.06 GB         CA 1.29 GB         Max_CA 1 GB
+[2024-04-27 22:22:47,374] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 58.28 GB, percent = 5.8%
+[2024-04-27 22:22:47,582] [INFO] [utils.py:803:see_memory_usage] Before creating fp32 partitions
+[2024-04-27 22:22:47,583] [INFO] [utils.py:804:see_memory_usage] MA 0.06 GB         Max_MA 0.06 GB         CA 1.29 GB         Max_CA 1 GB
+[2024-04-27 22:22:47,583] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 58.28 GB, percent = 5.8%
+[2024-04-27 22:22:47,868] [INFO] [utils.py:803:see_memory_usage] After creating fp32 partitions
+[2024-04-27 22:22:47,869] [INFO] [utils.py:804:see_memory_usage] MA 3.2 GB         Max_MA 4.77 GB         CA 7.57 GB         Max_CA 8 GB
+[2024-04-27 22:22:47,869] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 58.28 GB, percent = 5.8%
+[2024-04-27 22:22:48,130] [INFO] [utils.py:803:see_memory_usage] Before initializing optimizer states
+[2024-04-27 22:22:48,131] [INFO] [utils.py:804:see_memory_usage] MA 3.2 GB         Max_MA 3.2 GB         CA 7.57 GB         Max_CA 8 GB
+[2024-04-27 22:22:48,131] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 58.28 GB, percent = 5.8%
+[2024-04-27 22:22:48,322] [INFO] [utils.py:803:see_memory_usage] After initializing optimizer states
+[2024-04-27 22:22:48,322] [INFO] [utils.py:804:see_memory_usage] MA 9.48 GB         Max_MA 12.62 GB         CA 16.98 GB         Max_CA 17 GB
+[2024-04-27 22:22:48,322] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 58.28 GB, percent = 5.8%
+[2024-04-27 22:22:48,323] [INFO] [stage3.py:459:_setup_for_real_optimizer] optimizer state initialized
+[2024-04-27 22:22:48,797] [INFO] [utils.py:803:see_memory_usage] After initializing ZeRO optimizer
+[2024-04-27 22:22:48,798] [INFO] [utils.py:804:see_memory_usage] MA 11.05 GB         Max_MA 11.54 GB         CA 16.98 GB         Max_CA 17 GB
+[2024-04-27 22:22:48,798] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 58.28 GB, percent = 5.8%
+[2024-04-27 22:22:48,798] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = FusedAdam
+[2024-04-27 22:22:48,798] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-04-27 22:22:48,798] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <torch.optim.lr_scheduler.LambdaLR object at 0x7fe9c19ba610>
+[2024-04-27 22:22:48,798] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0, 0.0], mom=[(0.9, 0.95), (0.9, 0.95)]
+[2024-04-27 22:22:48,799] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-04-27 22:22:48,799] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fea1922fdc0>
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... {'init_scale': 65536, 'scale_window': 100, 'delayed_shift': 2, 'consecutive_hysteresis': False, 'min_scale': 1}
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=True max_out_tokens=512 inference_tp_size=1 release_inference_cache=True pin_parameters=True tp_gather_partition_size=8
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='step3_tensorboard/ds_tensorboard_logs/', job_name='step3_actor_tensorboard') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-04-27 22:22:48,800] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   train_batch_size ............. 128
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   world_size ................... 8
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=False reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=30000000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=30000000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-04-27 22:22:48,801] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-04-27 22:22:48,801] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 128,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "offload_optimizer": {
+            "device": "none"
+        },
+        "contiguous_gradients": false,
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "stage3_max_live_parameters": 3.000000e+07,
+        "stage3_prefetch_bucket_size": 3.000000e+07,
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true,
+        "loss_scale_window": 100
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false,
+    "hybrid_engine": {
+        "enabled": true,
+        "max_out_tokens": 512,
+        "inference_tp_size": 1,
+        "release_inference_cache": true,
+        "pin_parameters": true,
+        "tp_gather_partition_size": 8
+    },
+    "tensorboard": {
+        "enabled": false,
+        "output_path": "step3_tensorboard/ds_tensorboard_logs/",
+        "job_name": "step3_actor_tensorboard"
+    }
+}
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/zhaijidong/.cache/torch_extensions/py39_cu117/transformer_inference/build.ninja...
+Building extension module transformer_inference...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.5902671813964844 seconds
+[2024-04-27 22:22:49,604] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed-Inference config: {'layer_id': 0, 'hidden_size': 4096, 'intermediate_size': 11008, 'heads': 32, 'num_hidden_layers': -1, 'dtype': torch.float16, 'pre_layer_norm': True, 'norm_type': <NormType.RMSNorm: 3>, 'local_rank': -1, 'stochastic_mode': False, 'epsilon': 1e-05, 'mp_size': 1, 'scale_attention': True, 'triangular_masking': True, 'local_attention': False, 'window_size': 1, 'rotary_dim': 128, 'rotate_half': True, 'rotate_every_two': False, 'return_tuple': True, 'mlp_after_attn': True, 'mlp_act_func_type': <ActivationFuncType.GATED_SILU: 4>, 'specialized_mode': False, 'training_mp_size': 1, 'bigscience_bloom': False, 'max_out_tokens': 512, 'min_out_tokens': 512, 'scale_attn_by_inverse_layer_idx': False, 'enable_qkv_quantization': False, 'use_mup': False, 'return_single_tuple': False, 'set_empty_params': True, 'transposed_mode': True, 'use_triton': False, 'triton_autotune': False, 'num_kv': -1}
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.4132227897644043 seconds
+Loading extension module transformer_inference...
+Loading extension module transformer_inference...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.4189260005950928 seconds
+Time to load transformer_inference op: 0.4190549850463867 seconds
+Time to load transformer_inference op: 0.3978290557861328 seconds
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.4227790832519531 seconds
+Loading extension module transformer_inference...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.49881672859191895 seconds
+Time to load transformer_inference op: 0.5147819519042969 seconds
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combinationInstalled CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.1067359447479248 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.10256266593933105 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.10196328163146973 seconds
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.09739422798156738 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.11228442192077637 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.08655071258544922 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.11948990821838379 seconds
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.11070370674133301 seconds
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.10016798973083496 seconds
+******************[end] Initialized Actor Model [end] (duration: 10.28s)******************
+*************************[start] Initializing Ref Model [start] **************************
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.10946917533874512 seconds
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.10239696502685547 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.10867595672607422 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.11194705963134766 seconds
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.1120920181274414 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.11181354522705078 seconds
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module transformer_inference, skipping build step...
+Loading extension module transformer_inference...
+Time to load transformer_inference op: 0.11694860458374023 seconds
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:53,123] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 584, num_elems = 13.74B
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:53,152] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 585, num_elems = 13.87B
+[2024-04-27 22:22:53,201] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 586, num_elems = 14.00B
+[2024-04-27 22:22:53,225] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa06, git-hash=18c8aa06, git-branch=fix_tp
+[2024-04-27 22:22:53,280] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-04-27 22:22:53,282] [INFO] [logging.py:96:log_dist] [Rank 0] Creating ZeRO Offload
+[2024-04-27 22:22:53,521] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-04-27 22:22:53,522] [INFO] [utils.py:804:see_memory_usage] MA 11.37 GB         Max_MA 12.17 GB         CA 17.04 GB         Max_CA 17 GB
+[2024-04-27 22:22:53,522] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 67.37 GB, percent = 6.7%
+Parameter Offload: Total persistent parameters: 266240 in 65 params
+[2024-04-27 22:22:53,680] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-04-27 22:22:53,681] [INFO] [utils.py:804:see_memory_usage] MA 11.37 GB         Max_MA 11.37 GB         CA 17.04 GB         Max_CA 17 GB
+[2024-04-27 22:22:53,681] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 67.37 GB, percent = 6.7%
+[2024-04-27 22:22:53,682] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fea193c3460>
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... None
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-04-27 22:22:53,682] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   train_batch_size ............. 128
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   world_size ................... 8
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=False reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-04-27 22:22:53,683] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-04-27 22:22:53,683] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 128,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "contiguous_gradients": false,
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false
+}
+*******************[end] Initialized Ref Model [end] (duration: 3.45s)********************
+************************[start] Initializing Critic Model [start] ************************
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:53,933] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 732, num_elems = 14.30B
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:53,937] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 733, num_elems = 14.32B
+>Creating model from_config took 0.25571560859680176 seconds
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combinationInstalled CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combinationInstalled CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+
+
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combinationInstalled CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...No modifications detected for re-loaded extension module fused_adam, skipping build step...No modifications detected for re-loaded extension module fused_adam, skipping build step...
+
+
+Loading extension module fused_adam...Loading extension module fused_adam...Loading extension module fused_adam...
+
+
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.003916263580322266 seconds
+Time to load fused_adam op: 0.004074573516845703 seconds
+Time to load fused_adam op: 0.0040857791900634766 seconds
+Time to load fused_adam op: 0.004136085510253906 seconds
+Time to load fused_adam op: 0.00413203239440918 seconds
+[2024-04-27 22:22:54,055] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa06, git-hash=18c8aa06, git-branch=fix_tp
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.003299236297607422 seconds
+Time to load fused_adam op: 0.0031692981719970703 seconds
+Installed CUDA version 11.8 does not match the version torch was compiled with 11.7 but since the APIs are compatible, accepting this combination
+Using /home/zhaijidong/.cache/torch_extensions/py39_cu117 as PyTorch extensions root...
+No modifications detected for re-loaded extension module fused_adam, skipping build step...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.0033309459686279297 seconds
+[2024-04-27 22:22:54,073] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-04-27 22:22:54,074] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-04-27 22:22:54,075] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-04-27 22:22:54,080] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-04-27 22:22:54,080] [INFO] [utils.py:54:is_zero_supported_optimizer] Checking ZeRO support for optimizer=FusedAdam type=<class 'deepspeed.ops.adam.fused_adam.FusedAdam'>
+[2024-04-27 22:22:54,081] [INFO] [logging.py:96:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer, MiCS is enabled False, Hierarchical params gather False
+[2024-04-27 22:22:54,081] [INFO] [logging.py:96:log_dist] [Rank 0] Creating torch.float16 ZeRO stage 3 optimizer
+[2024-04-27 22:22:54,257] [INFO] [utils.py:803:see_memory_usage] Stage 3 initialize beginning
+[2024-04-27 22:22:54,257] [INFO] [utils.py:804:see_memory_usage] MA 11.45 GB         Max_MA 11.52 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:54,258] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 67.39 GB, percent = 6.7%
+[2024-04-27 22:22:54,259] [INFO] [stage3.py:126:__init__] Reduce bucket size 500,000,000
+[2024-04-27 22:22:54,259] [INFO] [stage3.py:127:__init__] Prefetch bucket size 30000000
+[2024-04-27 22:22:54,410] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-04-27 22:22:54,411] [INFO] [utils.py:804:see_memory_usage] MA 11.45 GB         Max_MA 11.45 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:54,411] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 67.39 GB, percent = 6.7%
+Parameter Offload: Total persistent parameters: 17408 in 34 params
+[2024-04-27 22:22:54,570] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-04-27 22:22:54,571] [INFO] [utils.py:804:see_memory_usage] MA 11.45 GB         Max_MA 11.45 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:54,571] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 67.39 GB, percent = 6.7%
+[2024-04-27 22:22:54,723] [INFO] [utils.py:803:see_memory_usage] Before creating fp16 partitions
+[2024-04-27 22:22:54,724] [INFO] [utils.py:804:see_memory_usage] MA 11.45 GB         Max_MA 11.45 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:54,724] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 67.39 GB, percent = 6.7%
+[2024-04-27 22:22:54,962] [INFO] [utils.py:803:see_memory_usage] After creating fp16 partitions: 2
+[2024-04-27 22:22:54,963] [INFO] [utils.py:804:see_memory_usage] MA 11.38 GB         Max_MA 11.45 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:54,963] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.41 GB, percent = 6.8%
+[2024-04-27 22:22:55,115] [INFO] [utils.py:803:see_memory_usage] Before creating fp32 partitions
+[2024-04-27 22:22:55,116] [INFO] [utils.py:804:see_memory_usage] MA 11.38 GB         Max_MA 11.38 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:55,116] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.41 GB, percent = 6.8%
+[2024-04-27 22:22:55,271] [INFO] [utils.py:803:see_memory_usage] After creating fp32 partitions
+[2024-04-27 22:22:55,272] [INFO] [utils.py:804:see_memory_usage] MA 11.52 GB         Max_MA 11.59 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:55,272] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.41 GB, percent = 6.8%
+[2024-04-27 22:22:55,424] [INFO] [utils.py:803:see_memory_usage] Before initializing optimizer states
+[2024-04-27 22:22:55,424] [INFO] [utils.py:804:see_memory_usage] MA 11.52 GB         Max_MA 11.52 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:55,424] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.41 GB, percent = 6.8%
+[2024-04-27 22:22:55,576] [INFO] [utils.py:803:see_memory_usage] After initializing optimizer states
+[2024-04-27 22:22:55,577] [INFO] [utils.py:804:see_memory_usage] MA 11.8 GB         Max_MA 11.95 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:55,577] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.41 GB, percent = 6.8%
+[2024-04-27 22:22:55,577] [INFO] [stage3.py:459:_setup_for_real_optimizer] optimizer state initialized
+[2024-04-27 22:22:55,792] [INFO] [utils.py:803:see_memory_usage] After initializing ZeRO optimizer
+[2024-04-27 22:22:55,792] [INFO] [utils.py:804:see_memory_usage] MA 11.87 GB         Max_MA 11.94 GB         CA 17.06 GB         Max_CA 17 GB
+[2024-04-27 22:22:55,793] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.41 GB, percent = 6.8%
+[2024-04-27 22:22:55,793] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = FusedAdam
+[2024-04-27 22:22:55,793] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-04-27 22:22:55,793] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <torch.optim.lr_scheduler.LambdaLR object at 0x7fe9d30b8e80>
+[2024-04-27 22:22:55,793] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0, 0.0], mom=[(0.9, 0.95), (0.9, 0.95)]
+[2024-04-27 22:22:55,793] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-04-27 22:22:55,793] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-04-27 22:22:55,793] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-04-27 22:22:55,793] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-04-27 22:22:55,793] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fe9d30d8400>
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... {'init_scale': 65536, 'scale_window': 100, 'delayed_shift': 2, 'consecutive_hysteresis': False, 'min_scale': 1}
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=True pin_parameters=True tp_gather_partition_size=8
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-04-27 22:22:55,794] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='step3_tensorboard/ds_tensorboard_logs/', job_name='step3_critic_tensorboard') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   train_batch_size ............. 128
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   world_size ................... 8
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=False reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=30000000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=30000000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-04-27 22:22:55,795] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-04-27 22:22:55,795] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 128,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "offload_param": {
+            "device": "cpu"
+        },
+        "offload_optimizer": {
+            "device": "none"
+        },
+        "contiguous_gradients": false,
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "stage3_max_live_parameters": 3.000000e+07,
+        "stage3_prefetch_bucket_size": 3.000000e+07,
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true,
+        "loss_scale_window": 100
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false,
+    "hybrid_engine": {
+        "enabled": false,
+        "max_out_tokens": 512,
+        "inference_tp_size": 1,
+        "release_inference_cache": true,
+        "pin_parameters": true,
+        "tp_gather_partition_size": 8
+    },
+    "tensorboard": {
+        "enabled": false,
+        "output_path": "step3_tensorboard/ds_tensorboard_logs/",
+        "job_name": "step3_critic_tensorboard"
+    }
+}
+******************[end] Initialized Critic Model [end] (duration: 2.11s)******************
+************************[start] Initializing Reward Model [start] ************************
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:55,925] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 879, num_elems = 14.63B
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32008. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+[2024-04-27 22:22:55,929] [INFO] [partition_parameters.py:347:__exit__] finished initializing model - num_params = 880, num_elems = 14.64B
+>Creating model from_config took 0.13717150688171387 seconds
+[2024-04-27 22:22:55,933] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.10.4+18c8aa06, git-hash=18c8aa06, git-branch=fix_tp
+[2024-04-27 22:22:55,937] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-04-27 22:22:55,937] [INFO] [logging.py:96:log_dist] [Rank 0] Creating ZeRO Offload
+[2024-04-27 22:22:56,096] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2024-04-27 22:22:56,097] [INFO] [utils.py:804:see_memory_usage] MA 11.95 GB         Max_MA 12.02 GB         CA 17.07 GB         Max_CA 17 GB
+[2024-04-27 22:22:56,097] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.42 GB, percent = 6.8%
+Parameter Offload: Total persistent parameters: 17408 in 34 params
+[2024-04-27 22:22:56,294] [INFO] [utils.py:803:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2024-04-27 22:22:56,295] [INFO] [utils.py:804:see_memory_usage] MA 11.95 GB         Max_MA 11.95 GB         CA 17.07 GB         Max_CA 17 GB
+[2024-04-27 22:22:56,295] [INFO] [utils.py:811:see_memory_usage] CPU Virtual Memory:  used = 68.43 GB, percent = 6.8%
+[2024-04-27 22:22:56,296] [INFO] [config.py:967:print] DeepSpeedEngine configuration:
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   amp_enabled .................. False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   amp_params ................... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   bfloat16_enabled ............. False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   checkpoint_parallel_write_pipeline  False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   checkpoint_tag_validation_enabled  True
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   checkpoint_tag_validation_fail  False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7fe9d2e917f0>
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   communication_data_type ...... None
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   curriculum_enabled_legacy .... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   curriculum_params_legacy ..... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   data_efficiency_enabled ...... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   dataloader_drop_last ......... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   disable_allgather ............ False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   dump_state ................... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   dynamic_loss_scale_args ...... None
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_enabled ........... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_gas_boundary_resolution  1
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_layer_num ......... 0
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_max_iter .......... 100
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_stability ......... 1e-06
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_tol ............... 0.01
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   eigenvalue_verbose ........... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   elasticity_enabled ........... False
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-04-27 22:22:56,296] [INFO] [config.py:971:print]   fp16_auto_cast ............... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   fp16_enabled ................. True
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   fp16_master_weights_and_gradients  False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   global_rank .................. 0
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   grad_accum_dtype ............. None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   gradient_accumulation_steps .. 1
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   gradient_clipping ............ 1.0
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   gradient_predivide_factor .... 1.0
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   initial_dynamic_scale ........ 65536
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   load_universal_checkpoint .... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   loss_scale ................... 0
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   memory_breakdown ............. False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   mics_hierarchial_params_gather  False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   mics_shard_size .............. -1
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   optimizer_legacy_fusion ...... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   optimizer_name ............... None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   optimizer_params ............. None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   pld_enabled .................. False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   pld_params ................... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   prescale_gradients ........... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   scheduler_name ............... None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   scheduler_params ............. None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   sparse_attention ............. None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   sparse_gradients_enabled ..... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   steps_per_print .............. 10
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   train_batch_size ............. 128
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   train_micro_batch_size_per_gpu  16
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   use_node_local_storage ....... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   wall_clock_breakdown ......... False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   weight_quantization_config ... None
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   world_size ................... 8
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   zero_allow_untested_optimizer  False
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   zero_config .................. stage=3 contiguous_gradients=False reduce_scatter=True reduce_bucket_size=500,000,000 allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100,000,000, max_in_cpu=1,000,000,000, pin_memory=False) offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=10000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=False pipeline_loading_checkpoint=False override_module_apply=True
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   zero_enabled ................. True
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   zero_force_ds_cpu_optimizer .. True
+[2024-04-27 22:22:56,297] [INFO] [config.py:971:print]   zero_optimization_stage ...... 3
+[2024-04-27 22:22:56,297] [INFO] [config.py:957:print_user_config]   json = {
+    "train_batch_size": 128,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 10,
+    "zero_optimization": {
+        "stage": 3,
+        "stage3_param_persistence_threshold": 1.000000e+04,
+        "offload_param": {
+            "device": "none"
+        },
+        "contiguous_gradients": false,
+        "memory_efficient_linear": false
+    },
+    "fp16": {
+        "enabled": true
+    },
+    "gradient_clipping": 1.0,
+    "prescale_gradients": false,
+    "wall_clock_breakdown": false
+}
+******************[end] Initialized Reward Model [end] (duration: 0.50s)******************
+***** Running training *****
+Beginning of Epoch 1/1, Total Generation Batches 239
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/transformers/generation/utils.py:1417: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation )
+  warnings.warn(
+------------------------------------------------------
+Free memory : 51.583618 (GigaBytes)
+Total memory: 79.151001 (GigaBytes)
+Requested memory: 9.750000 (GigaBytes)
+Setting maximum total tokens (input + output) to 512
+WorkSpace: 0x7fdfbc000000
+------------------------------------------------------
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/home/zhaijidong/miniconda3/envs/ds/lib/python3.9/site-packages/torch/utils/checkpoint.py:31: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+Epoch: 0 | Step: 0 | PPO Epoch: 1 | Actor Loss: -0.1473056823015213 | Critic Loss: 0.29712650179862976 | Unsupervised Loss: 0.0
+End-to-End => Latency: 21.15s, TFLOPs: 26.07, Samples/sec: 6.05, Time/seq 0.17s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 13.13s, Per-token Latency 51.28 ms, TFLOPs: 8.33, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 8.02s, TFLOPs: 55.11
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.057861328125
+-------------------------------------------------------------------------------------
+|E2E latency=20.98s |Gather latency=0.35s (1.68%) |Generate time=10.04s (47.84%) |Training time=10.06s (47.95%) |Others=0.88 (4.21%)|CurSamplesPerSec=6.10 |AvgSamplesPerSec=6.10
+Epoch: 0 | Step: 1 | PPO Epoch: 1 | Actor Loss: 0.018667902797460556 | Critic Loss: 0.2578772008419037 | Unsupervised Loss: 0.0
+End-to-End => Latency: 18.83s, TFLOPs: 29.28, Samples/sec: 6.80, Time/seq 0.15s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.65s, Per-token Latency 49.40 ms, TFLOPs: 8.65, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 6.19s, TFLOPs: 71.45
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.155517578125
+-------------------------------------------------------------------------------------
+|E2E latency=18.84s |Gather latency=0.85s (4.51%) |Generate time=9.00s (47.77%) |Training time=7.53s (39.98%) |Others=2.31 (12.25%)|CurSamplesPerSec=6.79 |AvgSamplesPerSec=6.43
+Epoch: 0 | Step: 2 | PPO Epoch: 1 | Actor Loss: -0.007969187572598457 | Critic Loss: 0.26375439763069153 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.74s, TFLOPs: 31.09, Samples/sec: 7.22, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.17s, Per-token Latency 47.52 ms, TFLOPs: 8.99, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.57s, TFLOPs: 79.31
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.178466796875
+-------------------------------------------------------------------------------------
+|E2E latency=17.75s |Gather latency=0.77s (4.36%) |Generate time=9.03s (50.87%) |Training time=6.95s (39.15%) |Others=1.77 (9.97%)|CurSamplesPerSec=7.21 |AvgSamplesPerSec=6.67
+Epoch: 0 | Step: 3 | PPO Epoch: 1 | Actor Loss: 0.005775677040219307 | Critic Loss: 0.30681878328323364 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.83s, TFLOPs: 30.92, Samples/sec: 7.18, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.25s, Per-token Latency 47.84 ms, TFLOPs: 8.93, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.59s, TFLOPs: 79.14
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.08953857421875
+-------------------------------------------------------------------------------------
+|E2E latency=17.84s |Gather latency=0.77s (4.34%) |Generate time=9.02s (50.56%) |Training time=6.98s (39.13%) |Others=1.84 (10.32%)|CurSamplesPerSec=7.18 |AvgSamplesPerSec=6.79
+Epoch: 0 | Step: 4 | PPO Epoch: 1 | Actor Loss: -0.12440943717956543 | Critic Loss: 0.33392661809921265 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.78s, TFLOPs: 31.01, Samples/sec: 7.20, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.19s, Per-token Latency 47.64 ms, TFLOPs: 8.97, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.59s, TFLOPs: 79.13
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.09210205078125
+-------------------------------------------------------------------------------------
+|E2E latency=17.79s |Gather latency=0.76s (4.28%) |Generate time=8.96s (50.40%) |Training time=6.96s (39.14%) |Others=1.86 (10.46%)|CurSamplesPerSec=7.20 |AvgSamplesPerSec=6.87
+Epoch: 0 | Step: 5 | PPO Epoch: 1 | Actor Loss: -0.07582516968250275 | Critic Loss: 0.3116798400878906 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.84s, TFLOPs: 30.91, Samples/sec: 7.17, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.26s, Per-token Latency 47.90 ms, TFLOPs: 8.92, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.58s, TFLOPs: 79.25
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.069580078125
+-------------------------------------------------------------------------------------
+|E2E latency=17.85s |Gather latency=0.76s (4.28%) |Generate time=9.03s (50.61%) |Training time=6.93s (38.86%) |Others=1.88 (10.53%)|CurSamplesPerSec=7.17 |AvgSamplesPerSec=6.92
+Epoch: 0 | Step: 6 | PPO Epoch: 1 | Actor Loss: -0.10369393229484558 | Critic Loss: 0.30623483657836914 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.76s, TFLOPs: 31.05, Samples/sec: 7.21, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.18s, Per-token Latency 47.57 ms, TFLOPs: 8.98, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.58s, TFLOPs: 79.19
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.08001708984375
+-------------------------------------------------------------------------------------
+|E2E latency=17.77s |Gather latency=0.75s (4.20%) |Generate time=8.92s (50.22%) |Training time=7.00s (39.39%) |Others=1.85 (10.39%)|CurSamplesPerSec=7.21 |AvgSamplesPerSec=6.96
+Epoch: 0 | Step: 7 | PPO Epoch: 1 | Actor Loss: 0.01223855558782816 | Critic Loss: 0.29746532440185547 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.86s, TFLOPs: 30.88, Samples/sec: 7.17, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.27s, Per-token Latency 47.92 ms, TFLOPs: 8.91, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.59s, TFLOPs: 79.07
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.123779296875
+-------------------------------------------------------------------------------------
+|E2E latency=17.86s |Gather latency=0.75s (4.20%) |Generate time=8.92s (49.96%) |Training time=7.09s (39.70%) |Others=1.85 (10.35%)|CurSamplesPerSec=7.17 |AvgSamplesPerSec=6.98
+Epoch: 0 | Step: 8 | PPO Epoch: 1 | Actor Loss: 0.00708948727697134 | Critic Loss: 0.2731531262397766 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.85s, TFLOPs: 30.90, Samples/sec: 7.17, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.25s, Per-token Latency 47.84 ms, TFLOPs: 8.93, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.60s, TFLOPs: 78.91
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.07696533203125
+-------------------------------------------------------------------------------------
+|E2E latency=17.85s |Gather latency=0.75s (4.19%) |Generate time=8.93s (50.02%) |Training time=7.08s (39.65%) |Others=1.84 (10.33%)|CurSamplesPerSec=7.17 |AvgSamplesPerSec=7.00
+[2024-04-27 22:25:58,418] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=0, lr=[9.65e-07, 9.65e-07], mom=[(0.9, 0.95), (0.9, 0.95)]
+[2024-04-27 22:25:58,420] [INFO] [timer.py:260:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=25.060504781341493, CurrSamplesPerSec=24.9869420911485, MemAllocated=13.5GB, MaxMemAllocated=26.08GB
+[2024-04-27 22:25:58,886] [INFO] [logging.py:96:log_dist] [Rank 0] step=10, skipped=0, lr=[5.000000000000001e-07, 5.000000000000001e-07], mom=[(0.9, 0.95), (0.9, 0.95)]
+Epoch: 0 | Step: 9 | PPO Epoch: 1 | Actor Loss: -0.02259909361600876 | Critic Loss: 0.26661935448646545 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.90s, TFLOPs: 30.81, Samples/sec: 7.15, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.30s, Per-token Latency 48.03 ms, TFLOPs: 8.89, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.60s, TFLOPs: 78.90
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.001800537109375
+-------------------------------------------------------------------------------------
+|E2E latency=17.90s |Gather latency=0.74s (4.14%) |Generate time=9.07s (50.69%) |Training time=7.00s (39.10%) |Others=1.83 (10.21%)|CurSamplesPerSec=7.15 |AvgSamplesPerSec=7.02
+Epoch: 0 | Step: 10 | PPO Epoch: 1 | Actor Loss: 0.12403199821710587 | Critic Loss: 0.3063861131668091 | Unsupervised Loss: 0.0
+End-to-End => Latency: 17.80s, TFLOPs: 30.98, Samples/sec: 7.19, Time/seq 0.14s, Batch Size: 128, Total Seq. Length: 512
+Generation => Latency: 12.21s, Per-token Latency 47.68 ms, TFLOPs: 8.96, BW: -1.00 GB/sec, Answer Seq. Length: 256
+Training   => Latency: 5.60s, TFLOPs: 79.00
+Actor Model Parameters => 6.738 B, Critic Model Parameters => 0.304 B
+Average reward score: -0.2030029296875
+-------------------------------------------------------------------------------------
+exit with early finished, for debug

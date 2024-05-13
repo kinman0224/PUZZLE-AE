@@ -1,0 +1,5 @@
+*output*/
+
+plotting/from_exec/figure*/fig*_*
+plotting/from_exec/figure*/logs
+plotting/from_exec/table3/logs

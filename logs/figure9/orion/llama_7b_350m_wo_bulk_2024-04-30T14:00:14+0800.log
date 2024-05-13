@@ -1,0 +1,683 @@
+2024-04-30 14:00:18,924	INFO worker.py:1540 -- Connecting to existing Ray cluster at address: 10.10.10.238:6379...
+2024-04-30 14:00:18,930	INFO worker.py:1724 -- Connected to Ray cluster.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:26 INFO     Added key: store_based_barrier_key:1 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:26 INFO     Added key: store_based_barrier_key:1 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:26 INFO     Added key: store_based_barrier_key:1 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:1 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:1 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:1 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:1 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:1 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:2 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:2 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:3 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:3 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:4 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:4 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:5 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:5 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:6 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:6 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:7 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:7 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:8 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:8 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:9 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:9 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:10 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:10 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:11 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:11 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:12 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:12 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:13 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:13 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:14 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:14 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:15 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:15 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:16 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:16 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:17 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:17 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:18 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:18 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:19 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:19 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:20 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 5
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 6
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 0
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 2
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 3
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 7
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:20 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Added key: store_based_barrier_key:21 to store for rank: 4
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 4: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 5: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 6: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 1: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 0: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 2: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 3: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m 2024-04-30 14:00:27 INFO     Rank 7: Completed store-based barrier for key:store_based_barrier_key:21 with 8 nodes.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Detected CUDA files, patching ldflags
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Emitting ninja build file /public/home/qinghuatest/ae/puzzle/megatron/fused_kernels/build/build.ninja...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Building extension module scaled_upper_triang_masked_softmax_cuda...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Loading extension module scaled_upper_triang_masked_softmax_cuda...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Detected CUDA files, patching ldflags
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Emitting ninja build file /public/home/qinghuatest/ae/puzzle/megatron/fused_kernels/build/build.ninja...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Building extension module scaled_masked_softmax_cuda...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Loading extension module scaled_masked_softmax_cuda...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Detected CUDA files, patching ldflags
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Emitting ninja build file /public/home/qinghuatest/ae/puzzle/megatron/fused_kernels/build/build.ninja...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Building extension module scaled_softmax_cuda...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m Loading extension module scaled_softmax_cuda...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m using world size: 8, data-parallel-size: 1, tensor-model-parallel size: 1, pipeline-model-parallel size: 8
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m using torch.float16 for parameters ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m ------------------------ arguments ------------------------
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   accumulate_allreduce_grads_in_fp32 .............. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   actor_model_name_or_path ........................ /public/thu_ljw_workspace/dataset/Llama-2-7b-hf/
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   adam_beta1 ...................................... 0.9
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   adam_beta2 ...................................... 0.999
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   adam_eps ........................................ 1e-08
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   add_bias_linear ................................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   add_position_embedding .......................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   adlr_autoresume ................................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   adlr_autoresume_interval ........................ 1000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   apply_layernorm_1p .............................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   apply_query_key_layer_scaling ................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   apply_residual_connection_post_layernorm ........ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   ar_stage_mbs .................................... 16
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   async_tensor_model_parallel_allreduce ........... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   attention_dropout ............................... 0.1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   attention_softmax_in_fp32 ....................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   barrier_with_L1_time ............................ True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bert_binary_head ................................ True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bert_embedder_type .............................. megatron
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bert_load ....................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bf16 ............................................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bias_dropout_fusion ............................. True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bias_gelu_fusion ................................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   biencoder_projection_dim ........................ 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   biencoder_shared_query_context_model ............ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   block_data_path ................................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   bulk_switch_on .................................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   classes_fraction ................................ 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   clip_grad ....................................... 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   consumed_train_samples .......................... 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   consumed_valid_samples .......................... 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   critic_model_name_or_path ....................... ./puzzle/example/config/Llama2-350m-hf/
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_impl ....................................... infer
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_output_path ................................ /tmp/data_files
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_parallel_random_init ....................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_parallel_size .............................. 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_path ....................................... ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/']
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_per_class_fraction ......................... 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_sharding ................................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   data_split ...................................... 2,4,4
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dataloader_type ................................. single
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   DDP_impl ........................................ local
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   decoder_num_layers .............................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   decoder_seq_length .............................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_bottleneck_size ............................ 256
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_freeze_last_layer .......................... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_head_hidden_size ........................... 2048
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_local_crops_number ......................... 10
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_local_img_size ............................. 96
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_norm_last_layer ............................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_teacher_temp ............................... 0.07
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_warmup_teacher_temp ........................ 0.04
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   dino_warmup_teacher_temp_epochs ................. 30
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   distribute_saved_activations .................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   distributed_backend ............................. nccl
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   distributed_timeout_minutes ..................... 10
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   embedding_path .................................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   empty_unused_memory_level ....................... 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   encoder_num_layers .............................. 32
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   encoder_seq_length .............................. 512
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   end_weight_decay ................................ 0.01
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   eod_mask_loss ................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   eval_interval ................................... 1000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   eval_iters ...................................... 100
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   evidence_data_path .............................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   exit_duration_in_mins ........................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   exit_interval ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   exit_on_missing_checkpoint ...................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   exit_signal_handler ............................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   exp_repeat ...................................... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   ffn_hidden_size ................................. 11008
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   finetune ........................................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp16 ............................................ True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp16_lm_cross_entropy ........................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp32_residual_connection ........................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_amax_compute_algo ........................... most_recent
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_amax_history_len ............................ 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_e4m3 ........................................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_hybrid ...................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_interval .................................... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_margin ...................................... 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   fp8_wgrad ....................................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   generation_batches .............................. 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   global_batch_size ............................... 128
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   gradient_accumulation_fusion .................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   gradient_accumulation_steps ..................... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   head_lr_mult .................................... 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   hidden_dropout .................................. 0.1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   hidden_size ..................................... 4096
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   hysteresis ...................................... 2
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   ict_head_size ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   ict_load ........................................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   img_h ........................................... 224
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   img_w ........................................... 224
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   indexer_batch_size .............................. 128
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   indexer_log_interval ............................ 1000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   inference_batch_times_seqlen_threshold .......... 1024
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   init_method_std ................................. 0.02
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   init_method_xavier_uniform ...................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   initial_loss_scale .............................. 4294967296
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   iter_per_epoch .................................. 1250
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   kv_channels ..................................... 128
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   layernorm_epsilon ............................... 1e-05
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lazy_mpu_init ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   load ............................................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   load_model_from_hf_config ....................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   load_model_hf_checkpoint ........................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   local_rank ...................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_batch_size_to_tensorboard ................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_interval .................................... 100
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_learning_rate_to_tensorboard ................ True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_loss_scale_to_tensorboard ................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_memory_to_tensorboard ....................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_num_zeros_in_grad ........................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_params_norm ................................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_timers_to_tensorboard ....................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_validation_ppl_to_tensorboard ............... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   log_world_size_to_tensorboard ................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   loss_scale ...................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   loss_scale_window ............................... 1000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr .............................................. 0.00015
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr_decay_iters .................................. 320000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr_decay_samples ................................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr_decay_style .................................. cosine
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr_warmup_fraction .............................. 0.01
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr_warmup_iters ................................. 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   lr_warmup_samples ............................... 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   make_vocab_size_divisible_by .................... 128
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   mask_factor ..................................... 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   mask_prob ....................................... 0.15
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   mask_type ....................................... random
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   masked_softmax_fusion ........................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   max_answer_seq_len .............................. 256
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   max_position_embeddings ......................... 512
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   max_prompt_seq_len .............................. 256
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   max_tokens_to_oom ............................... 12000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   merge_file ...................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   micro_batch_size ................................ 4
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   min_loss_scale .................................. 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   min_lr .......................................... 1e-05
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   mmap_warmup ..................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   model_name_or_path .............................. /public/thu_ljw_workspace/dataset/Llama-2-7b-hf/
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   no_load_optim ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   no_load_rng ..................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   no_persist_layer_norm ........................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   no_save_optim ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   no_save_rng ..................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_attention_heads ............................. 32
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_channels .................................... 3
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_classes ..................................... 1000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_experts ..................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_layers ...................................... 32
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_layers_per_virtual_pipeline_stage ........... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_train_epochs ................................ 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   num_workers ..................................... 2
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   onnx_safe ....................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   openai_gelu ..................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   optimizer ....................................... adam
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   output_bert_embeddings .......................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   override_opt_param_scheduler .................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   params_dtype .................................... torch.float16
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   patch_dim ....................................... 16
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   perform_initialization .......................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   pf_stage_mbs .................................... 4
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   pipeline_model_parallel_size .................... 8
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   pipeline_model_parallel_split_rank .............. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   placement_type .................................. 4
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   ppo_epochs ...................................... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   query_in_block_prob ............................. 0.1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   rampup_batch_size ............................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   rank ............................................ 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   recompute_granularity ........................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   recompute_method ................................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   recompute_num_layers ............................ 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   reset_attention_mask ............................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   reset_position_ids .............................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retriever_report_topk_accuracies ................ []
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retriever_score_scaling ......................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retriever_seq_length ............................ 256
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_add_retriever ............................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_cyclic_train_iters ........................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_encoder_attention_dropout ................. 0.1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_encoder_hidden_dropout .................... 0.1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_encoder_layers ............................ 2
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_num_neighbors ............................. 2
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_num_retrieved_chunks ...................... 2
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_return_doc_ids ............................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   retro_workdir ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   rotary_percent .................................. 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   sample_rate ..................................... 1.0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   save ............................................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   save_interval ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   scatter_gather_tensors_in_pipeline .............. True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   seed ............................................ 1234
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   seq_length ...................................... 512
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   sequence_parallel ............................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   sgd_momentum .................................... 0.9
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   shadow_pipeline_model_parallel_size ............. 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   shadow_tensor_model_parallel_size ............... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   short_seq_prob .................................. 0.1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   split ........................................... 969, 30, 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   squared_relu .................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   standalone_embedding_stage ...................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   start_weight_decay .............................. 0.01
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   swiglu .......................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   swin_backbone_type .............................. tiny
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   tensor_model_parallel_size ...................... 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   tensorboard_dir ................................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   tensorboard_log_interval ........................ 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   tensorboard_queue_size .......................... 1000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   test_data_path .................................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   timing_log_level ................................ 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   timing_log_option ............................... minmax
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   titles_data_path ................................ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   tokenizer_model ................................. /public/thu_ljw_workspace/dataset/Llama-2-7b-hf/
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   tokenizer_type .................................. PretrainedFromHF
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   train_data_path ................................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   train_iters ..................................... 500000
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   train_samples ................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   transformer_impl ................................ local
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   transformer_pipeline_model_parallel_size ........ 8
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   untie_embeddings_and_output_weights ............. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_checkpoint_args ............................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_checkpoint_opt_param_scheduler .............. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_contiguous_buffers_in_local_ddp ............. True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_cpu_initialization .......................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_dis_bubble_generation ....................... True
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_distributed_optimizer ....................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_flash_attn .................................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_one_sent_docs ............................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_ring_exchange_p2p ........................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_rotary_position_embeddings .................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   use_shadow ...................................... False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   valid_data_path ................................. None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   variable_seq_lengths ............................ False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   virtual_pipeline_model_parallel_size ............ None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   vision_backbone_type ............................ vit
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   vision_pretraining .............................. False
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   vision_pretraining_type ......................... classify
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   vocab_extra_ids ................................. 0
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   vocab_file ...................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   vocab_size ...................................... None
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   weight_decay .................................... 0.01
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   weight_decay_incr_style ......................... constant
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m   world_size ...................................... 8
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m -------------------- end of arguments ---------------------
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m setting number of micro-batches to constant 32
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > building PretrainedFromHF tokenizer ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m  Loading tokenizer from pre-trained model
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m  > padded vocab (size: 32000) with 0 dummy tokens (new size: 32000)
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > initializing torch distributed ...
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m {'tokenizer_type': 'PretrainedFromHF', 'tokenizer_model': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'data_path': ['/public/thu_ljw_workspace/dataset/Dahoas/rm-static/'], 'data_split': '2,4,4', 'data_output_path': '/tmp/data_files', 'seq_length': 512, 'actor_model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'critic_model_name_or_path': './puzzle/example/config/Llama2-350m-hf/', 'max_prompt_seq_len': 256, 'max_answer_seq_len': 256, 'generation_batches': 1, 'ppo_epochs': 1, 'num_train_epochs': 1, 'gradient_accumulation_steps': 1, 'tensor_model_parallel_size': 1, 'pipeline_model_parallel_size': 8, 'use_contiguous_buffers_in_local_ddp': True, 'load_model_from_hf_config': True, 'load_model_hf_checkpoint': False, 'model_name_or_path': '/public/thu_ljw_workspace/dataset/Llama-2-7b-hf/', 'max_position_embeddings': 512, 'micro_batch_size': 4, 'global_batch_size': 128, 'inference_batch_times_seqlen_threshold': 1024, 'train_iters': 500000, 'add_bias_linear': False, 'add_position_embedding': False, 'lr': 0.00015, 'lr_decay_style': 'cosine', 'lr_decay_iters': 320000, 'min_lr': 1e-05, 'lr_warmup_fraction': 0.01, 'weight_decay': 0.01, 'clip_grad': 1.0, 'fp16': True, 'bf16': False, 'use_dis_bubble_generation': True, 'pf_stage_mbs': 4, 'ar_stage_mbs': 16, 'use_shadow': False, 'shadow_tensor_model_parallel_size': 1, 'shadow_pipeline_model_parallel_size': 1, 'bulk_switch_on': False, 'exp_repeat': 1, 'placement_type': 4}
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > initialized tensor model parallel with size 1
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > initialized pipeline model parallel with size 8
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > setting random seeds to 1234 ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > compiling dataset index builder ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m make: Entering directory `/public/home/qinghuatest/ae/puzzle/megatron/data'
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m make: Nothing to be done for `default'.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m make: Leaving directory `/public/home/qinghuatest/ae/puzzle/megatron/data'
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m >>> done with dataset index builder. Compilation time: 0.050 seconds
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > compiling and loading fused kernels ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m ninja: no work to do.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m ninja: no work to do.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m ninja: no work to do.
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m >>> done with compiling and loading fused kernels. Compilation time: 5.865 seconds
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m building Llama model ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 940605440
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > learning rate decay style: cosine
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m building Llama model ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 58591232
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m > learning rate decay style: cosine
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m building Llama model ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 940605440
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m building Llama model ...
+[36m(TimeSharedModelRayRole pid=2208, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 58591232
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 7): 940609536
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 3): 809533440
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 3): 42207232
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 3): 809533440
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 6): 809533440
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 6): 42207232
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 6): 809533440
+[36m(TimeSharedModelRayRole pid=2336, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 6): 42207232
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 4): 809533440
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 4): 42207232
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 4): 809533440
+[36m(TimeSharedModelRayRole pid=2334, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 4): 42207232
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 2): 809533440
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 2): 42207232
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 2): 809533440
+[36m(TimeSharedModelRayRole pid=2332, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 2): 42207232
+num_total_iters: 477
+Beginning of Epoch 1/1, Total Generation Batches 477
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 7): 42208256
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 7): 940609536
+[36m(TimeSharedModelRayRole pid=2337, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 7): 42208256
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 5): 809533440
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 5): 42207232
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 5): 809533440
+[36m(TimeSharedModelRayRole pid=2335, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 5): 42207232
+[36m(TimeSharedModelRayRole pid=2333, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 3): 42207232
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 809533440
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 42207232
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 809533440
+[36m(TimeSharedModelRayRole pid=2331, ip=10.10.10.239)[0m  > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 42207232
+epoch: 0 | step: 0/477 | ppo_ep: 1 | global_batch_size: 128 | average_reward: -0.176 | act_loss: 5.719 | cri_loss: 5.067 | stage 1(gen.) (ms): 16935.113 | stage 2(infer.) (ms): 2239.060 | stage 3(train.) (ms): 8111.526 | e2e_time (ms): 27285.699
+epoch: 0 | step: 1/477 | ppo_ep: 1 | global_batch_size: 128 | average_reward: -0.182 | act_loss: 5.829 | cri_loss: 5.072 | stage 1(gen.) (ms): 10283.358 | stage 2(infer.) (ms): 1424.215 | stage 3(train.) (ms): 4458.920 | e2e_time (ms): 16166.493
+epoch: 0 | step: 2/477 | ppo_ep: 1 | global_batch_size: 128 | average_reward: -0.174 | act_loss: 5.656 | cri_loss: 5.236 | stage 1(gen.) (ms): 10387.018 | stage 2(infer.) (ms): 1357.318 | stage 3(train.) (ms): 4427.882 | e2e_time (ms): 16172.219
+epoch: 0 | step: 3/477 | ppo_ep: 1 | global_batch_size: 128 | average_reward: -0.223 | act_loss: 5.629 | cri_loss: 5.180 | stage 1(gen.) (ms): 10551.534 | stage 2(infer.) (ms): 1342.885 | stage 3(train.) (ms): 4410.824 | e2e_time (ms): 16305.243
+epoch: 0 | step: 4/477 | ppo_ep: 1 | global_batch_size: 128 | average_reward: -0.216 | act_loss: 5.647 | cri_loss: 5.167 | stage 1(gen.) (ms): 10492.059 | stage 2(infer.) (ms): 1350.971 | stage 3(train.) (ms): 4410.982 | e2e_time (ms): 16254.012
+epoch: 0 | step: 5/477 | ppo_ep: 1 | global_batch_size: 128 | average_reward: -0.164 | act_loss: 5.901 | cri_loss: 5.139 | stage 1(gen.) (ms): 10262.050 | stage 2(infer.) (ms): 2360.413 | stage 3(train.) (ms): 4478.711 | e2e_time (ms): 17101.174
+exit with early finished, for debug
